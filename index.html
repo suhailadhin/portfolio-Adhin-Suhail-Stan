@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Adhin Suhail Stan</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css"> 
+
+    <!--Javascript file-->
+    <script src="script.js" type="module"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center; align-items: center; z-index: 1000;">
+        <div style="border: 8px solid #f3f3f3; border-top: 8px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+    </div>
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Portfolio Adhin Suhail Stan</h1>
+        <nav>
+            <!-- Navigation Menu -->
+            <ul>
+                <li><a href="#about">Accueil</a></li> 
+                <li><a href="#about">A Propos</a></li>
+                <li><a href="#projet">Projet</a></li>
+                <li><a href="#footer-container">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>Votre projet web, ma priorité</h2>
+        <!-- Profile Image -->
+        <img class="profil-item" src="assets\image\photo-profil.jpg" alt="photo-profil">
+        <!-- About Content -->
+        <p>
+            Passionné(e) par le développement web, je suis là pour vous accompagner dans la réalisation de tous vos projets en ligne. De la création d'un site vitrine à la conception d'une application web complexe, je mets mes compétences au service de votre réussite. 
+            <br>
+            <strong>Mes compétences :</strong> HTML, CSS, JavaScript, React, WordPress, design responsive, SEO, UX/UI.
+            <br>
+            J'ai déjà eu l'opportunité de travailler sur divers projets, tels que [exemple de projet 1], [exemple de projet 2].
+            <br>
+            En plus de mes compétences techniques, je vous propose également des conseils en matière de marketing digital et de design graphique pour vous aider à optimiser votre présence en ligne.
+            <br>
+            N'hésitez pas à me contacter pour discuter de votre projet. Je suis impatient(e) de travailler avec vous !
+        </p> 
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projet">
+        <h2>Mes Projets</h2>
+        <!-- Project Cards -->
+        <article class="card">
+            <h3>Association Mermoz-93</h3>
+            <img src="assets\image\mermoz 93.jpg" alt="Projet 1">
+            <p>Création d'un site web en react pour une association. Visant les habitants du quartier Chene-Pointu
+                à Clichy-sous-bois.
+            </p>
+            <a href="#" class="btn">Voir le projet</a>
+        </article>
+        <article class="card">
+            <h3>Projet Ohmyfood</h3>
+            <img src="assets\image\ohmyfood.png" alt="Projet 2">
+            <p>Ohmyfood est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d’attente dans les restaurants, car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !.</p>
+            <a href="https://github.com/suhailadhin/ohmyfood.git" class="btn">Voir le projet</a>
+        </article>
+        <article class="card">
+            <h3>Projet Kasa </h3>
+            <img src="assets\image\image d'illustration.png" alt="Projet 3">
+            <p>Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans. L'entreprise souhaite faire une refonte totale de son site web.</p>
+            <a href="https://github.com/suhailadhin/kasa.git" class="btn">Voir le projet</a>
+        </article>
+        <article class="card">
+            <h3>Rapport d'Optimisation - Site Web de Nina Carducci</h3>
+            <img src="assets\image\nina.jpg" alt="Projet 4">
+            <p>Suite à ces modifications et optimisations, le site web de Nina Carducci a considérablement amélioré ses performances, son accessibilité et son référencement.</p>
+            <a href="https://github.com/suhailadhin/projet-9-Nina-Carducci.git" class="btn">Voir le projet</a>
+        </article>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="container">
+        <h2>Expérience professionnelle</h2>
+        <div class="experience">
+            <!-- Job Role -->
+            <h3>Développeur front-end</h3>
+            <h4>Association Mermoz-93</h4>
+            <ul>
+                <li>Création de la maquette du site web</li>
+                <p class="date">Avril 2022</p>
+                <li>Mise en place du site web</li>
+                <p class="date">Juillet 2022</p>
+            </ul>
+            <hr class="date-line">    
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div id="footer-container">
+            <div class="row">
+                <div class="col">
+                    <!-- Copyright Information -->
+                    <p>&copy; Adhin Suhail Stan - 2025 - Tous droits réservés.</p>
+                </div>
+                <div class="col">
+                    <!-- Social Links -->
+                    <ul class="social-links">
+                        <li><a href="www.linkedin.com/in/suhaill-stan-adhin-8b9bb8272"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/suhailadhin"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

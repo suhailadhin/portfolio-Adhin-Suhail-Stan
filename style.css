@@ -1,0 +1,245 @@
+html {
+    background: url('assets/image/pexels-stephan-seeber-1261728.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1440px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-family: "Kanit", serif;
+}
+
+h1 {
+    color: chocolate;
+    font-size: 25px;
+    font-family: "Kanit", serif;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#about img {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 50%;
+    object-fit: scale-down;
+    margin: 10px auto;
+}
+
+#about h2 {
+    font-size: 25px;
+    color: chocolate; 
+    font-family: "Kanit", serif;
+}
+
+#about p {
+    color: black;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Playwrite HU", serif;
+    text-align: justify;
+}
+
+#projet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: chocolate;
+    width: 100%;
+    margin-top: 50px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+#projet h2 {
+    font-family: "Playwrite HU", serif;
+}
+
+.card {
+    border: black solid 3px;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: chocolate;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+    font-family: "Kanit", serif;
+}
+
+.card .btn {
+    background-color: chocolate;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-family: "Playwrite HU", serif;
+}
+
+.card .btn:hover {
+    background-color: darkorange;
+}
+
+.container {
+    display: flex;
+    margin: 35px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container h2, h3, h4 {
+    font-family: "Playwrite HU", serif;
+}
+
+.date {
+    color: black;
+    font-family: "Playwrite HU", serif;
+}
+
+.date-line {
+    border-top: 5px solid black; 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: chocolate;
+    border-radius: 8px;
+    color: white;
+}
+
+.col {
+    font-family: "Playwrite HU", serif;
+    font-weight: bold; 
+    margin: 10px;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: darkorange;
+}
+
+@media screen and (max-width: 768px) {
+    #projet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0%;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
